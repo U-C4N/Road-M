@@ -1118,7 +1118,7 @@ Matematik olimpiyatlarında başarılı olmanın en önemli adımlarından biri,
 Matematikte ustalaşmak, sabır, tutku ve sürekli çaba gerektirir. Bu yol haritasını takip ederek ve düzenli çalışarak, sıfırdan başlayıp ileri seviye matematik olimpiyatlarını çözebilecek seviyeye ulaşabilirsiniz. Unutmayın ki, önemli olan sadece bilgiyi öğrenmek değil, aynı zamanda bu bilgiyi etkili bir şekilde uygulayabilmektir. Sürekli öğrenmeye ve asla pes etmemeye odaklanın. Başarıya giden yolda attığınız her adım, sizi hedeflerinize bir adım daha yaklaştıracaktır.
 
 
-                                                                                                                                                                                                                                                                                                     Created by Umutcan E.
+Created by Umutcan E.
 ---
 
 
