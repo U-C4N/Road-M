@@ -2,17 +2,13 @@
 
 Verilen problemde, gerçel sayı **α** için her pozitif tam sayı **n** için aşağıdaki şart sağlanmaktadır:
 
-\[
-S(n) = \left\lfloor \alpha \right\rfloor + \left\lfloor 2\alpha \right\rfloor + \left\lfloor 3\alpha \right\rfloor + \dotsb + \left\lfloor n\alpha \right\rfloor
-\]
+S(n) = ⌊α⌋ + ⌊2α⌋ + ⌊3α⌋ + ... + ⌊nα⌋
 
 Ve bu toplam **n** sayısının bir katı olmalıdır, yani:
 
-\[
-S(n) \equiv 0 \pmod n
-\]
+S(n) ≡ 0 (mod n)
 
-Burada \(\left\lfloor x \right\rfloor\), \(x\)'den küçük veya ona eşit en büyük tam sayıyı ifade etmektedir.
+Burada ⌊x⌋, x'den küçük veya ona eşit en büyük tam sayıyı ifade etmektedir.
 
 **Amacımız:** Bu şartı sağlayan tüm **α** gerçel sayılarını bulmaktır.
 
@@ -20,24 +16,32 @@ Burada \(\left\lfloor x \right\rfloor\), \(x\)'den küçük veya ona eşit en b�
 
 ### 1. α bir tam sayı ise
 
-Eğer **α** bir tam sayıysa, yani **α ∈ \mathbb{Z}**, her **k** pozitif tam sayısı için:
+Eğer **α** bir tam sayıysa, yani **α ∈ Z**, her **k** pozitif tam sayısı için:
 
-\[
-\left\lfloor k\alpha \right\rfloor = k\alpha
-\]
+⌊kα⌋ = kα
 
 Çünkü **α** tam sayı olduğundan, çarpım da tam sayı olur ve tam kısmı kendisine eşittir.
 
 Toplam:
 
-\[
-S(n) = \sum_{k=1}^{n} k\alpha = \alpha \sum_{k=1}^{n} k = \alpha \cdot \frac{n(n+1)}{2}
-\]
+S(n) = Σ(k=1, n) kα = α * Σ(k=1, n) k = α * (n(n+1)) / 2
 
 **S(n)**'nin **n**'ye bölümünden kalanı inceleyelim:
 
-\[
-S(n) \mod n = \left( \alpha \cdot \frac{n(n+1)}{2} \right) \mod n = \left( \alpha \cdot \frac{n+1}{2} \cdot n \right) \mod n = \left( \alpha \cdot \frac{n+1}{2} \cdot n \mod n \right)
-\]
+S(n) mod n = (α * (n(n+1)) / 2) mod n = α * ((n+1) / 2) * n mod n
 
-Burada \(\alpha \cdot \frac{
+Burada α * ((n+1) / 2) bir tam sayıysa, **S(n)**, **n**'nin tam katı olacaktır.
+
+**Durumları inceleyelim:**
+
+- **a)** **α** çift tam sayı ise, yani **α = 2k**, k ∈ Z:
+
+  S(n) = 2k * (n(n+1)) / 2 = k * n * (n+1)
+
+  Burada **S(n)**, k * n * (n+1) şeklindedir ve **n**'nin tam katıdır.
+
+- **b)** **α** tek tam sayı ise, yani **α = 2k+1**, k ∈ Z:
+
+  S(n) = (2k+1) * (n(n+1)) / 2
+
+  **n** çift bir sayı olduğunda, (n+1)/2 kesirli bir sayı
