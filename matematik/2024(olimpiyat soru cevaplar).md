@@ -112,3 +112,133 @@ Verilen şartı sağlayan **α** gerçel sayıları yalnızca **çift tam sayıl
 **Cevap:**
 
 **α**, **çift tam sayı** ise, verilen şart sağlanır. Bu nedenle, şartı sağlayan tüm **α** gerçel sayıları **çift tam sayılardır**.
+
+
+2. Soru çözümü ;
+
+**Çözüm:**
+
+Verilen koşulu sağlayan tek pozitif tam sayı ikilisi (a, b) = (1, 1)'dir.
+
+**Açıklama:**
+
+Öncelikle (a, b) = (1, 1) ikilisini inceleyelim:
+
+Her **n** için:
+
+ebob(1n + 1, 1n + 1) = ebob(2, 2) = 2
+
+Görüldüğü gibi ebob değeri her zaman 2 olup sabittir. Dolayısıyla (1, 1) ikilisi verilen koşulu sağlar.
+
+**Diğer pozitif tam sayı ikilileri için genelleme yapalım:**
+
+**Anahtar Sayı Tanımı:**  
+M = ab + 1 alın.
+
+**Aralarında Asallık:**  
+ebob(a, M) = 1  
+ebob(b, M) = 1
+
+Çünkü M = ab + 1 ifadesi, a ve b ile ortak bölen içermez.
+
+**Euler Teoremi Uygulaması:**  
+Euler'in Totient fonksiyonu φ(M) olsun.  
+n değerini φ(M)'nin büyük bir katı olacak şekilde seçelim (n ≥ N).
+
+Bu durumda:  
+a^n ≡ 1 (mod M) ve b^n ≡ 1 (mod M)
+
+**Modüler Denklem İncelemesi:**
+
+a^n + b ≡ 1 + b (mod M)  
+b^n + a ≡ 1 + a (mod M)
+
+Bu ifadelerin ebob'ının M'yi bölmesi gerekir. Yani:  
+ebob(1 + b, 1 + a) ≡ 0 (mod M)
+
+Buradan:  
+a + 1 ≡ 0 (mod M) ve b + 1 ≡ 0 (mod M)
+
+Yani:  
+a ≡ -1 (mod M) ve b ≡ -1 (mod M)
+
+**Toplamın İncelenmesi:**
+
+a + b ≡ -1 + (-1) = -2 (mod M)
+
+Bu ifadeden -2 ≡ 0 (mod M) elde edilir. Yani M sayısı 2'yi bölmelidir.
+
+**M'nin Değerinin Belirlenmesi:**
+
+M = ab + 1 ve M pozitif bir tam sayı olduğuna göre, M = 2 olmalıdır.
+
+Bu durumda:  
+ab + 1 = 2 ⟹ ab = 1
+
+a ve b pozitif tam sayılar olduğundan, sadece a = b = 1 mümkündür.
+
+**Sonuç:**
+
+Verilen koşulu sağlayan tek pozitif tam sayı ikilisi (a, b) = (1, 1)'dir.
+
+**Cevap:**  
+(a, b) = (1, 1)
+
+
+
+3. Soru Çözümü ;
+
+
+**Çözüm:**
+
+Verilen problemde, pozitif tam sayılardan oluşan sonsuz bir (a_n) dizisi ve N pozitif tam sayısı verilmiştir.  
+n > N için, a_n terimi, a_(n-1) teriminin a_1, a_2, …, a_(n-1) arasında kaç kere geçtiğine eşittir.
+
+**Amacımız:**  
+(a_1, a_3, a_5, …) veya (a_2, a_4, a_6, …) dizilerinden en az birinin bir yerden sonra periyodik olduğunu ispatlamaktır.
+
+### İspata Başlayalım:
+
+**Başlangıç Değerlerinin Sınırlandırılması:**
+
+Öncelikle, ilk N terim a_1, a_2, …, a_N verilmiştir. Bu terimlerin maksimum değerini M = max{a_1, a_2, …, a_N} olarak tanımlayalım.
+
+**Dizinin Gelişiminin Analizi:**
+
+n > N için, her bir a_n terimi a_(n-1) teriminin a_1'den a_(n-1)'e kadar kaç kez tekrar ettiğine eşittir. Yani, a_n terimi, a_(n-1) teriminin önceki terimler arasında kaç defa göründüğünün sayısıdır.
+
+**Terimlerin Değerlerinin Yükselmesi:**
+
+Bir terimin değeri, o terimin önceki tekrarıyla ilgilidir. Eğer bir terim sık sık tekrar ederse, sayısı artar. Ancak, her a_n terimi en fazla n-1 olabilir çünkü a_(n-1), a_1'den a_(n-1)'e kadar en fazla n-1 kere görünebilir.
+
+**Sınırlı Durumların Tespiti ve Durum Makinesi Oluşturma:**
+
+Dizinin gelecekteki davranışını incelemek için, dizinin durumlarını takip edebileceğimiz bir yöntem geliştirelim. Bunun için, her terimin ve onun tekrar sayısının belirlediği bir durum tanımlayalım.  
+n > N için, durumu S_n = (a_(n-1), a_n) olarak tanımlayalım. Burada:  
+- a_(n-1) terimi, bir önceki terimdir.  
+- a_n terimi ise, a_(n-1) teriminin önceki terimler arasında kaç kez göründüğüdür.
+
+**Durum Sayısının Sonluluğu:**
+
+Şimdi, bu durumların sayısının sonlu olduğunu göstereceğiz. Öncelikle, a_(n-1) terimi pozitif bir tam sayıdır. a_n terimi ise, a_(n-1) teriminin tekrar sayısıdır. Tekrar sayısı, n arttıkça artabilir, ancak her adımda birer birer artar. Bu yüzden, durumlar (a_(n-1), a_n) çiftleri olarak düşünülürse, bu çiftlerin sayısı, terimlerin alabileceği değerlerden dolayı sınırlıdır.
+
+**Pigeonhole Prensibi'nin Uygulanması:**
+
+Durumların sonlu olması ve dizinin sonsuz olması nedeniyle, Pigeonhole Prensibi'ne göre, aynı durumlar sonsuz defa tekrar etmek zorundadır. Yani, dizide herhangi bir (a_(n-1), a_n) durumu, farklı n değerleri için tekrar tekrar meydana gelecektir.
+
+**Periyodikliğin Tespiti:**
+
+Aynı durumlar tekrar ettiğinde, dizinin ilerleyişi aynı şekilde devam eder. Bu nedenle, durumların tekrarından dolayı, dizinin terimleri periyodik bir döngüye girer.
+
+**Tek ve Çift İndisli Dizilerin İncelenmesi:**
+
+Diziyi tek ve çift indisli terimlere ayırdık:  
+- **Tek İndisli Terimler:** (a_1, a_3, a_5, …)  
+- **Çift İndisli Terimler:** (a_2, a_4, a_6, …)
+
+Yukarıdaki argümanımızı bu alt diziler için uygularsak, en az birinin bir yerden sonra periyodik olmak zorunda olduğunu görürüz. Çünkü durumların sonlu sayıda olması ve Pigeonhole Prensibi nedeniyle, ya tek indisli terimler ya da çift indisli terimler periyodik bir döngüye girecektir.
+
+**Sonuç:**
+
+Bu nedenle, verilen koşullar altında (a_1, a_3, a_5, …) veya (a_2, a_4, a_6, …) dizilerinden en az birinin bir yerden sonra periyodik olduğunu ispatlamış oluyoruz.
+
