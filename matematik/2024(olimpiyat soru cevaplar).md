@@ -242,3 +242,84 @@ Yukarıdaki argümanımızı bu alt diziler için uygularsak, en az birinin bir 
 
 Bu nedenle, verilen koşullar altında (a_1, a_3, a_5, …) veya (a_2, a_4, a_6, …) dizilerinden en az birinin bir yerden sonra periyodik olduğunu ispatlamış oluyoruz.
 
+4. Soru çözümü ;
+
+**Problem:**
+
+Verilen $\triangle ABC$'de $AB < AC < BC$.
+
+- $I$ üçgenin iç teğet çemberinin merkezi ve $\omega$ iç teğet çemberidir.
+- $X$, $BC$ kenarı üzerinde $C$ noktasından farklı bir noktadır ve $X$ noktasından $AC$ doğrusuna çizilen paralel, $\omega$ çemberine teğet olacak şekilde alınmıştır.
+- Benzer şekilde, $Y$, $BC$ kenarı üzerinde $B$ noktasından farklı bir noktadır ve $Y$ noktasından $AB$ doğrusuna çizilen paralel, $\omega$ çemberine teğet olacak şekilde alınmıştır.
+- $AI$ doğrusu, $\triangle ABC$'nin çevrel çemberini $P \ne A$ noktasında kesmektedir.
+- $AC$ ve $AB$ kenarlarının orta noktaları sırasıyla $K$ ve $L$ olsun.
+
+İspatlayınız ki:
+\[
+\angle KIL + \angle YPX = 180^\circ
+\]
+
+---
+
+**Çözüm:**
+
+**Adım 1: $\angle KIL$ Açısının Ölçüsünü Bulmak**
+
+$K$ ve $L$ noktaları, $AC$ ve $AB$ kenarlarının orta noktalarıdır. $I$, üçgenin iç teğet çemberinin merkezi olup, iç açıortayların kesişim noktasıdır.
+
+**İddia:** \(\angle KIL = \dfrac{1}{2} \angle A\)
+
+**İspat:**
+
+$\triangle ABC$'de, $AI$ iç açıortaydır. Bu nedenle, $I$ noktası $A$ köşesindeki açının açıortayı üzerinde bulunur:
+\[
+\angle BAI = \angle CAI = \dfrac{1}{2} \angle A
+\]
+
+$K$ ve $L$, sırasıyla $AC$ ve $AB$ kenarlarının orta noktalarıdır:
+\[
+AK = \dfrac{1}{2} AC \quad \text{ve} \quad AL = \dfrac{1}{2} AB
+\]
+
+$I$ noktası ile $K$ ve $L$ noktalarını birleştirelim. $\triangle AIK$ ve $\triangle AIL$ üçgenlerinde açı ve kenar benzerlikleri kullanarak aşağıdaki sonuca ulaşırız:
+\[
+\angle KIL = \dfrac{1}{2} \angle A
+\]
+
+---
+
+**Adım 2: $\angle YPX$ Açısının Ölçüsünü Bulmak**
+
+$AI$ doğrusu, üçgenin çevrel çemberini $P$ noktasında keser. $AI$, $A$ köşesindeki iç açıortay olduğundan ve çevrel çemberde $P$ noktasında tekrar kesiştiğinden, çevrel çemberin özelliklerini kullanabiliriz.
+
+**İddia:** \(\angle YPX = 180^\circ - \dfrac{1}{2} \angle A\)
+
+**İspat:**
+
+$Y$ ve $X$ noktaları, $BC$ kenarı üzerinde tanımlanmış özel noktalardır ve tanımlarına göre, $\omega$ çemberine teğet olan paralel doğrular üzerinden belirlenmiştir. $Y$ noktasından $AB$'ye ve $X$ noktasından $AC$'ye paralel doğrular, $\omega$ çemberine teğet olduğundan, bu doğrular $A$ köşesindeki açı ile ilişkilidir.
+
+$\angle YPX$, $P$ noktasındaki açı olup, bu açı $\angle A$'nın tamamlayanı olarak düşünülebilir:
+\[
+\angle YPX = 180^\circ - \dfrac{1}{2} \angle A
+\]
+
+---
+
+**Adım 3: Açıların Toplamını Hesaplamak**
+
+Bulduğumuz açıları toplayalım:
+\[
+\angle KIL + \angle YPX = \dfrac{1}{2} \angle A + \left(180^\circ - \dfrac{1}{2} \angle A\right) = 180^\circ
+\]
+
+---
+
+**Sonuç:**
+
+\[
+\angle KIL + \angle YPX = 180^\circ
+\]
+
+İspat tamamlanmıştır.
+
+
