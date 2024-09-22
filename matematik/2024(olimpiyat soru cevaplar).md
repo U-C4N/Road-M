@@ -323,3 +323,4 @@ Bulduğumuz açıları toplayalım:
 İspat tamamlanmıştır.
 
 
+
