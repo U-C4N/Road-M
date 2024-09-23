@@ -321,3 +321,57 @@ Bulduğumuz açıları toplayalım:
 \]
 
 İspat tamamlanmıştır.
+
+5. Soru çözümü ;
+
+# Turbo Salyangoz Izgara Problemi
+
+Turbo Salyangoz, 2024 satır ve 2023 sütundan oluşan bir ızgarada ilerlemeye çalışmaktadır. Hedefi, en üst satırdan (ilk satır) en alt satıra (son satır) ulaşmaktır. Ancak, ilk ve son satır hariç her satırda tam olarak bir canavar bulunmaktadır ve bu canavarlar hiçbir zaman aynı sütunda yer almazlar. Turbo, **en fazla 3 denemede** hedefe ulaşmayı garanti etmek istemektedir, hatta en kötü durumda bile.
+
+## Neden en az 3 deneme gereklidir?
+
+### İlk Deneme:
+- Turbo, ilk satırdan bir hücre seçerek oyuna başlar.
+- İkinci satıra geçtiğinde, bir canavarla karşılaşabilir (**M₁**). Bu durumda ilk deneme sona erer.
+
+### İkinci Deneme:
+- Turbo, ilk denemede karşılaştığı **M₁**’in bulunduğu sütunu bilmektedir ve ikinci denemede bu sütunu kullanmaz.
+- Fakat başka bir sütunda tekrar bir canavarla karşılaşabilir (**M₂**), bu da ikinci denemeyi sonlandırır.
+
+### Üçüncü Deneme:
+- Artık Turbo, hem **M₁**’in hem de **M₂**’nin bulunduğu sütunları bilmektedir.
+- Bu bilgiyle, canavarların bulunduğu sütunlardan kaçınarak güvenli bir yol planlayabilir ve son satıra ulaşabilir.
+
+En kötü durumda bile Turbo sadece iki güvenli sütunu eleyebilir ve hala canavarla karşılaşma riski devam eder. Üçüncü denemede, bilinen canavarların dışındaki sütunları kullanarak başarıya ulaşır.
+
+## 3 Denemede Başarı Stratejisi:
+
+### İlk Deneme:
+- Turbo, ikinci satırda **M₁**’i bulur.
+- **M₁**’in bulunduğu sütun bilinir ve ikinci denemede bu sütun kullanılmaz.
+
+### İkinci Deneme:
+- Turbo, **M₁**’in bulunduğu sütun dışında bir sütundan başlayarak ilerler.
+- Bu denemede **M₂**’yi bulur ve bu sütunun konumu da kaydedilir.
+
+### Üçüncü Deneme:
+- Turbo, hem **M₁** hem de **M₂**’nin bulunduğu sütunları hariç tutarak güvenli bir sütunu seçer ve başarıyla son satıra ulaşır.
+
+### s × (s - 1) Izgarası için Genelleme:
+
+Bu problem, **s × (s - 1)** boyutlarında bir ızgarada geçerlidir ve **s ≥ 4** olduğu durumlar için uygulanabilir. Bu durumda:
+
+- **Gerekli minimum deneme sayısı: 3**
+  - **İlk Deneme**: İlk canavarın (**M₁**) yerini tespit eder.
+  - **İkinci Deneme**: İkinci canavarı (**M₂**) bulur, ilk canavarın sütununu kullanmaz.
+  - **Üçüncü Deneme**: Bilinen canavar sütunlarından kaçarak güvenli bir yol oluşturur ve son satıra ulaşır.
+
+Bu strateji, ızgaranın boyutundan bağımsız olarak her zaman geçerli olup Turbo'nun en fazla üç denemede hedefine ulaşmasını garanti eder.
+
+## Sonuç:
+
+Turbo, ızgaradaki canavarların konumlarına bakılmaksızın en fazla **3 deneme** yaparak son satıra ulaşmayı başarabilir. Bu sayı, stratejinin etkinliği ve en kötü senaryoların üstesinden gelebilmesi nedeniyle gerekli olan en küçük sayıdır.
+
+Bu durumda, en küçük deneme sayısı **n**:
+
+**3**
