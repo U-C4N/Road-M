@@ -73,3 +73,12 @@ while sayi < 5:
 4
 ```
 
+**2. Kullanıcı Girişi ile**
+
+```python
+sifre = ""
+while sifre != "1234":
+    sifre = input("Şifreyi giriniz: ")
+print("Giriş başarılı!")
+
+
