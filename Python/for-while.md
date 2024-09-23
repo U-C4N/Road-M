@@ -15,3 +15,19 @@ Python'da **döngüler (loops)**, belirli bir kod bloğunu birden fazla kez çal
 ```python
 for eleman in koleksiyon:
     # İşlem yapılacak kod bloğu
+
+### **Örnekler:**
+
+**1. Liste Elemanlarını Yazdırma**
+
+```python
+meyveler = ["elma", "armut", "muz"]
+for meyve in meyveler:
+    print(meyve)
+
+**Çıktı**
+
+```python
+elma
+armut
+muz
