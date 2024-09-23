@@ -97,3 +97,26 @@ print("Giriş başarılı!")
 | **Kod Okunabilirliği** | Daha kısa ve okunaklıdır; sayaç yönetimi otomatik yapılır.    | Sayaç veya koşul yönetimi manuel yapılır; dikkat gerektirir.     |
 | **Sonsuz Döngü Riski**| Daha düşüktür; genellikle koleksiyonun sonuna ulaşınca biter.   | Daha yüksektir; koşul doğru değerlendirilemezse sonsuz döngü oluşabilir.|
 
+## **Hangi Projelerde Kullanılırlar?**
+
+### **`for` Döngüsü Kullanım Alanları:**
+
+- **Veri İşleme:** Listeler, demetler ve sözlükler üzerinde iterasyon.
+- **Dosya İşlemleri:** Dosyadaki satırları okumak.
+- **Algoritmalar:** Sıralama ve arama algoritmaları.
+
+### **`while` Döngüsü Kullanım Alanları:**
+
+- **Kullanıcı Etkileşimi:** Kullanıcı doğru girişi yapana kadar tekrar sorma.
+- **Oyun Geliştirme:** Oyun döngülerini yönetme.
+- **Ağ Programlama:** Bağlantı kopana kadar veri alma/gönderme işlemleri.
+
+## **Hangisi Daha İyi?**
+
+Bu, tamamen ihtiyacınıza bağlıdır:
+
+- **İterasyon Sayısı veya Koleksiyon Belliyse:** `for` döngüsü daha uygundur.
+- **Koşula Bağlı Tekrarlama Gerekiyorsa:** `while` döngüsü tercih edilmelidir.
+
+**Genel Tavsiye:** Okunabilir ve bakım kolaylığı olan kodlar yazmak için uygun döngüyü seçmek önemlidir.
+
