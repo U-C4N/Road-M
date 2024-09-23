@@ -81,4 +81,19 @@ while sifre != "1234":
     sifre = input("Şifreyi giriniz: ")
 print("Giriş başarılı!")
 
+## **`for` ve `while` Döngülerinin Kıyaslaması**
+
+### **Benzerlikler:**
+
+- Her ikisi de kod bloklarını tekrar tekrar çalıştırmak için kullanılır.
+- Kontrol yapılarıdır ve belirli bir mantık akışını sağlarlar.
+
+### **Farklar:**
+
+| Özellik             | `for` Döngüsü                                                   | `while` Döngüsü                                                 |
+|---------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+| **Kullanım Amacı**   | Koleksiyonlar üzerinde iterasyon yapmak için idealdir.          | Belirli bir koşul sağlandığı sürece döngüyü tekrarlar.           |
+| **İterasyon Sayısı** | Genellikle önceden bilinir veya belirlenir.                     | İterasyon sayısı önceden bilinmeyebilir; koşula bağlıdır.        |
+| **Kod Okunabilirliği** | Daha kısa ve okunaklıdır; sayaç yönetimi otomatik yapılır.    | Sayaç veya koşul yönetimi manuel yapılır; dikkat gerektirir.     |
+| **Sonsuz Döngü Riski**| Daha düşüktür; genellikle koleksiyonun sonuna ulaşınca biter.   | Daha yüksektir; koşul doğru değerlendirilemezse sonsuz döngü oluşabilir.|
 
