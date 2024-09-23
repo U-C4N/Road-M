@@ -120,3 +120,45 @@ Bu, tamamen ihtiyacınıza bağlıdır:
 
 **Genel Tavsiye:** Okunabilir ve bakım kolaylığı olan kodlar yazmak için uygun döngüyü seçmek önemlidir.
 
+## **Kısa Örnekler ile Anlatım**
+
+### **`for` Döngüsü ile Faktöriyel Hesaplama**
+
+```python
+sayi = 5
+faktoriyel = 1
+
+for i in range(1, sayi + 1):
+    faktoriyel *= i
+
+print(f"{sayi}! = {faktoriyel}")
+```
+
+**Çıktı**
+```python
+5! = 120
+```
+
+### **`while` Döngüsü ile Tahmin Oyunu**
+
+```python
+import random
+sayi = random.randint(1, 10)
+tahmin = 0
+
+while tahmin != sayi:
+    tahmin = int(input("1 ile 10 arasında bir sayı tahmin edin: "))
+    if tahmin < sayi:
+        print("Daha büyük bir sayı deneyin.")
+    elif tahmin > sayi:
+        print("Daha küçük bir sayı deneyin.")
+
+print("Tebrikler, doğru tahmin!")
+```
+## **Sonuç**
+
+- **`for` Döngüsü:** Koleksiyonlar ve belirli sayıda iterasyonlar için idealdir.
+- **`while` Döngüsü:** Koşula bağlı tekrarlamalar için uygundur.
+
+Her iki döngü de Python'da ve genel olarak programlamada çok önemlidir. Hangisini kullanacağınıza karar verirken, probleminizi ve en uygun yaklaşımı değerlendirmelisiniz.
+
