@@ -38,4 +38,15 @@ muz
 for i in range(5):
     print(i)
 ```
+**Çıktı**
+
+```python
+
+0
+1
+2
+3
+4
+```
+
 
