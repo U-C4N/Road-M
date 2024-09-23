@@ -80,7 +80,7 @@ sifre = ""
 while sifre != "1234":
     sifre = input("Şifreyi giriniz: ")
 print("Giriş başarılı!")
-
+```
 ## **`for` ve `while` Döngülerinin Kıyaslaması**
 
 ### **Benzerlikler:**
