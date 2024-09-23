@@ -32,3 +32,10 @@ elma
 armut
 muz
 ```
+
+**2. range() Fonksiyonu ile**
+```python
+for i in range(5):
+    print(i)
+```
+
