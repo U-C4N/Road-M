@@ -41,7 +41,6 @@ for i in range(5):
 **Çıktı**
 
 ```python
-
 0
 1
 2
@@ -49,4 +48,28 @@ for i in range(5):
 4
 ```
 
+## **`while` Döngüsü**
+
+### **Tanım:**
+
+`while` döngüsü, belirli bir koşul **`True`** olduğu sürece kod bloğunu tekrarlar. Koşul **`False`** olduğunda döngü sona erer.
+
+### **Örnekler:**
+
+**1. Sayaç ile Döngü**
+
+```python
+sayi = 0
+while sayi < 5:
+    print(sayi)
+    sayi += 1
+```
+**Çıktı**
+```python
+0
+1
+2
+3
+4
+```
 
