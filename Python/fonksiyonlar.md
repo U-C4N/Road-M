@@ -30,3 +30,16 @@ def fonksiyon_adi(parametreler):
 def merhaba_de():
     print("Merhaba!")
 ```
+### 3.3. Örnek: Parametre Alan ve Değer Döndüren Fonksiyon
+
+```python
+def toplama(a, b):
+    toplam = a + b
+    return toplam
+```
+
+**Kullanımı:**
+```python
+sonuc = toplama(5, 3)
+print(sonuc)  # Çıktı: 8
+```
