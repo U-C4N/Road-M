@@ -221,3 +221,74 @@ def toplama(a, b):
 
 print(toplama.__doc__)  # Çıktı: Bu fonksiyon iki sayının toplamını döndürür.
 ```
+
+# 11. Fonksiyonları Parametre Olarak Kullanmak
+
+Fonksiyonlar da birer nesnedir ve başka fonksiyonlara parametre olarak geçirilebilirler.
+
+```python
+def uygulama(fonksiyon, deger):
+    return fonksiyon(deger)
+
+def kare(x):
+    return x ** 2
+
+print(uygulama(kare, 5))  # Çıktı: 25
+```
+
+# 12. Yerleşik Fonksiyonlar ve Kullanıcı Tanımlı Fonksiyonlar
+
+- **Yerleşik Fonksiyonlar:** Python'un kendi içinde hazır olarak gelen fonksiyonlardır (print(), len(), type() vb.).
+- **Kullanıcı Tanımlı Fonksiyonlar:** Kendi ihtiyaçlarımıza göre tanımladığımız fonksiyonlardır.
+
+# 13. Örnek Uygulama: Basit Bir Hesap Makinesi
+
+```python
+def toplama(a, b):
+    return a + b
+
+def cikarma(a, b):
+    return a - b
+
+def carpma(a, b):
+    return a * b
+
+def bolme(a, b):
+    if b == 0:
+        return "Hata: Bölme işleminde payda sıfır olamaz."
+    return a / b
+
+print("İşlem Seçiniz:")
+print("1. Toplama")
+print("2. Çıkarma")
+print("3. Çarpma")
+print("4. Bölme")
+
+secim = input("Seçiminiz (1/2/3/4): ")
+sayi1 = float(input("Birinci sayıyı girin: "))
+sayi2 = float(input("İkinci sayıyı girin: "))
+
+if secim == '1':
+    print("Sonuç:", toplama(sayi1, sayi2))
+elif secim == '2':
+    print("Sonuç:", cikarma(sayi1, sayi2))
+elif secim == '3':
+    print("Sonuç:", carpma(sayi1, sayi2))
+elif secim == '4':
+    print("Sonuç:", bolme(sayi1, sayi2))
+else:
+    print("Geçersiz seçim.")
+```
+
+# 14. Özet ve Sonuç
+
+- Fonksiyonlar kodumuzu daha düzenli ve yönetilebilir hale getirir.
+- Parametreler ve dönüş değerleri ile fonksiyonlar esnek ve güçlü yapılar sunar.
+- *args ve **kwargs ile fonksiyonlarınızı daha genel hale getirebilirsiniz.
+- Lambda fonksiyonları ile hızlı ve kısa fonksiyonlar tanımlayabilirsiniz.
+- Fonksiyonları iyi anlamak, Python'da etkili programlama yapmanın temel adımlarından biridir.
+
+# 15. Ek Kaynaklar
+
+- **Python Resmi Belgeleri:** [https://docs.python.org/tr/3/tutorial/index.html](https://docs.python.org/tr/3/tutorial/index.html)
+- **Online Python Dersleri ve Eğitimleri**
