@@ -95,5 +95,21 @@ print(toplam(1, 2, 3))         # Çıktı: 6
 print(toplam(4, 5, 6, 7, 8))   # Çıktı: 30
 ```
 
-Bu örnekte, toplam fonksiyonu değişken sayıda argüman alabilir. Her bir sayı, `*sayilar` parametresi sayesinde bir tuple içinde toplanır.
+Bu örnekte, `toplam` fonksiyonu değişken sayıda argüman alabilir. Her bir sayı, `*sayilar` parametresi sayesinde bir tuple içinde toplanır.
+### 5.2. **kwargs (Keyword Arguments)
 
+`**kwargs`, bir fonksiyona değişken sayıda **anahtar kelime argümanı** geçmenizi sağlar. Bu argümanlar, fonksiyon içinde bir **dictionary (sözlük)** olarak tutulur ve anahtar-değer çiftleri şeklinde işlenir.
+
+Fonksiyona anahtar kelime argümanları gönderdiğinizde, Python bu argümanları bir sözlük içinde toplar. Bu sayede, değişken sayıda anahtar kelime argümanı gönderebilir ve bu argümanları esnek bir şekilde işleyebilirsiniz.
+
+#### Örnek:
+
+```python
+def bilgiler(**kwargs):
+    for anahtar, deger in kwargs.items():
+        print(f"{anahtar}: {deger}")
+```
+**Kullanımı:**
+```python
+bilgiler(isim="Mehmet", yas=30, sehir="Ankara")
+```
