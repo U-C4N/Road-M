@@ -43,3 +43,35 @@ def toplama(a, b):
 sonuc = toplama(5, 3)
 print(sonuc)  # Çıktı: 8
 ```
+
+## 4. Fonksiyon Parametreleri ve Argümanlar
+
+- **Parametreler:** Fonksiyon tanımlanırken parantez içinde belirtilen değişkenlerdir.
+- **Argümanlar:** Fonksiyon çağrılırken parametrelere karşılık gelen değerlerdir.
+
+### 4.1. Varsayılan Parametreler
+
+Fonksiyon parametrelerine varsayılan değerler atayabilirsiniz.
+
+```python
+def selamla(isim="Misafir"):
+    print(f"Merhaba, {isim}!")
+```
+**Kullanımı:**
+```python
+selamla("Ahmet")  # Çıktı: Merhaba, Ahmet!
+selamla()         # Çıktı: Merhaba, Misafir!
+```
+### 4.2. Anahtar Kelime Argümanları
+
+Anahtar kelime argümanları, fonksiyon çağrılırken parametrelerin sırasını belirtmek zorunda kalmadan, parametre isimlerine karşılık gelen argümanları belirtmenize olanak tanır. Bu, kodun daha okunabilir olmasını sağlar ve parametrelerin sırası önemli olmadığında kullanışlıdır.
+
+```python
+def bilgiler(isim, yas, sehir):
+    print(f"İsim: {isim}, Yaş: {yas}, Şehir: {sehir}")
+```
+**Kullanımı:**
+```python
+bilgiler(yas=25, sehir="İstanbul", isim="Ayşe")
+```
+
