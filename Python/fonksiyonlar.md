@@ -113,3 +113,41 @@ def bilgiler(**kwargs):
 ```python
 bilgiler(isim="Mehmet", yas=30, sehir="Ankara")
 ```
+## 6. return İfadesi ve Fonksiyonun Dönüş Değeri
+
+`return` ifadesi, bir fonksiyonun çalışması tamamlandığında bir **değer döndürmesini** sağlar. Fonksiyonun çağrıldığı noktada bu döndürülen değer kullanılabilir. Eğer bir fonksiyon içerisinde `return` ifadesi kullanılmazsa, fonksiyon **varsayılan olarak** `None` döndürür.
+
+### 6.1. return Kullanımı
+
+Bir fonksiyonun sonucunu döndürmek için `return` ifadesi kullanılır. Döndürülen değer, fonksiyonun çağrıldığı yere geri gönderilir.
+
+#### Örnek:
+
+```python
+def kare(sayi):
+    return sayi ** 2
+```
+**Kullanımı:**
+```python
+sonuc = kare(4)
+print(sonuc)  # Çıktı: 16
+```
+### 6.2. `return` İfadesi ve Fonksiyonun Dönüş Değeri
+
+Python'da bir fonksiyon, `return` ifadesi ile bir değer döndürebilir. Fonksiyonun görevi bittiğinde, `return` ifadesiyle belirtilen değer çağrıldığı yere geri gönderilir. Eğer bir fonksiyon `return` ifadesi kullanmazsa, Python otomatik olarak `None` değeri döndürür.
+
+#### `return` İfadesinin Kullanımı:
+
+```python
+def kare(sayi):
+    return sayi ** 2
+```
+**Kullanımı:**
+```python
+sonuc = kare(5)
+print(sonuc)  # Çıktı: 25
+```
+Fonksiyon `kare(5)` ifadesiyle çağrıldığında, 5'in karesi hesaplanır ve bu değer `sonuc` değişkenine atanır.
+
+### `return` İfadesi Olmadan:
+Eğer `return` ifadesi kullanılmazsa, fonksiyon sonuç döndürmez ve varsayılan olarak `None` değeri döner.
