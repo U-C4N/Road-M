@@ -74,4 +74,23 @@ def bilgiler(isim, yas, sehir):
 ```python
 bilgiler(yas=25, sehir="İstanbul", isim="Ayşe")
 ```
+## 5. *args ve **kwargs ile Esnek Parametreler
 
+Python'da fonksiyonlara esnek sayıda argüman geçirmek için iki özel sözdizimi kullanılır: `*args` ve `**kwargs`. Bu yapıların kullanılması, fonksiyonların değişken sayıda parametre alabilmesini sağlar.
+
+### 5.1. *args (Arbitrary Arguments)
+
+`*args`, bir fonksiyona belirsiz sayıda pozisyonel argüman geçirmemizi sağlar. Fonksiyonun içinde `*args` bir **tuple** olarak davranır ve gönderilen tüm argümanlar bu tuple'da toplanır.
+
+```python
+def toplam(*sayilar):
+    toplam = 0
+    for sayi in sayilar:
+        toplam += sayi
+    return toplam
+```
+**Kullanımı:**
+```python
+print(toplam(1, 2, 3))         # Çıktı: 6
+print(toplam(4, 5, 6, 7, 8))   # Çıktı: 30
+```
