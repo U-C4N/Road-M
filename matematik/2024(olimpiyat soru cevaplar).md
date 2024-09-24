@@ -378,11 +378,10 @@ Bu durumda, en küçük deneme sayısı **n**:
 
 6. Soru çözümü ;
 
-
 # Problem
-Rasyonel sayıların kümesi \( \mathbb{Q} \) üzerinde fonksiyonları inceliyoruz. Bir fonksiyon \( f: \mathbb{Q} 	o \mathbb{Q} \) her \( x, y \in \mathbb{Q} \) için aşağıdaki şartlardan en az birini sağlıyorsa, bu fonksiyona aquaesulian fonksiyonu denir:
-1. \( f(x + f(y)) = f(x) + y \)
-2. \( f(f(x) + y) = x + f(y) \)
+Rasyonel sayıların kümesi \( Q \) üzerinde fonksiyonları inceliyoruz. Bir fonksiyon \( f: Q \to Q \), her \( x, y \in Q \) için aşağıdaki şartlardan en az birini sağlıyorsa, bu fonksiyona aquaesulian fonksiyonu denir:
+1. `f(x + f(y)) = f(x) + y`
+2. `f(f(x) + y) = x + f(y)`
 
 ## Amaç:
 Öyle bir tam sayı \( c \)'nin var olduğunu gösteriniz ki, herhangi bir aquaesulian fonksiyon \( f \) için \( f(r) + f(-r) \) ile ifade edilebilen farklı rasyonel sayıların sayısı en fazla \( c \) olsun. Ayrıca \( c \)'nin alabileceği en küçük değeri bulunuz.
@@ -390,60 +389,49 @@ Rasyonel sayıların kümesi \( \mathbb{Q} \) üzerinde fonksiyonları inceliyor
 # Çözüm Adımları
 
 ## Aquaesulian Fonksiyonlarının Özellikleri
-### İddia 1: \( f \) enjektiftir (farklı girdiler farklı çıktılara gider).
+### İddia 1: `f` enjektiftir (farklı girdiler farklı çıktılara gider).
 **Kanıt:**
 Diyelim ki \( f(a) = f(b) \). \( x = 0 \) ve \( y = a \) için denklemleri inceleyelim.
 Denklem (1)'i kullanarak:
-\[ f(0 + f(a)) = f(0) + a \]
+`f(0 + f(a)) = f(0) + a`
 Benzer şekilde, \( y = b \) için:
-\[ f(0 + f(b)) = f(0) + b \]
+`f(0 + f(b)) = f(0) + b`
 Ancak \( f(a) = f(b) \) olduğundan:
-\[ f(0 + f(a)) = f(0 + f(b)) \]
+`f(0 + f(a)) = f(0 + f(b))`
 Dolayısıyla:
-\[ f(0) + a = f(0) + b \implies a = b \]
+`f(0) + a = f(0) + b \implies a = b`
 Böylece \( f \) enjektiftir.
 
 ### \( f \)'nin Özel Bir Özelliği:
-**İddia 2:** Her \( x \in \mathbb{Q} \) için, \( f(-f(x)) = f(0) - x \).
+**İddia 2:** Her \( x \in Q \) için, `f(-f(x)) = f(0) - x`.
 
 **Kanıt:**
 Denklem (1)'de \( x = -f(x) \) ve \( y = x \) alalım:
-\[ f(-f(x) + f(x)) = f(-f(x)) + x \]
-\[ f(0) = f(-f(x)) + x \]
+`f(-f(x) + f(x)) = f(-f(x)) + x`
+`f(0) = f(-f(x)) + x`
 Böylece:
-\[ f(-f(x)) = f(0) - x \]
+`f(-f(x)) = f(0) - x`
 
 ## \( f(r) + f(-r) \) İfadelerinin İncelenmesi
-**İddia 3:** Her \( r \in \mathbb{Q} \) için, \( f(r) + f(-r) \) ifadesi en fazla iki farklı değer alabilir.
+**İddia 3:** Her \( r \in Q \) için, `f(r) + f(-r)` ifadesi en fazla iki farklı değer alabilir.
 
 **Kanıt:**
 \( f \) enjektif olduğundan ve \( f(-f(r)) = f(0) - r \) olduğunu bildiğimizden, \( f \)'nin tersinin negatifinin \( f(0) - r \) olduğunu gözlemleyelim.
 Şimdi \( r \) ve \( -r \) için bu ifadeleri toplarsak:
-\[ f(r) + f(-r) = c \]
+`f(r) + f(-r) = c`
 Buradaki \( c \), \( f \)'ye bağlı bir sabittir. Ancak bu toplamın en fazla iki farklı değer alabileceğini göstereceğiz.
 
 ### Örnek:
-Aşağıdaki fonksiyonun aquaesulian olduğunu gösterelim: \( f(x) = \lfloor 2x 
-floor - x \), burada \( \lfloor \cdot 
-floor \), tam kısmı alır.
+Aşağıdaki fonksiyonun aquaesulian olduğunu gösterelim: `f(x) = floor(2x) - x`, burada `floor()` tam kısmı alır.
 Bu fonksiyon için:
-\[ f(r) + f(-r) = (\lfloor 2r 
-floor - r) + (\lfloor -2r 
-floor + r) = \lfloor 2r 
-floor + \lfloor -2r 
-floor \]
-Eğer \( 2r \) bir tam sayıysa, \( \lfloor 2r 
-floor + \lfloor -2r 
-floor = -1 \).
-Aksi halde, \( \lfloor 2r 
-floor + \lfloor -2r 
-floor = -2 \).
+`f(r) + f(-r) = (floor(2r) - r) + (floor(-2r) + r) = floor(2r) + floor(-2r)`
+Eğer \( 2r \) bir tam sayıysa, `floor(2r) + floor(-2r) = -1`.
+Aksi halde, `floor(2r) + floor(-2r) = -2`.
 
-Dolayısıyla, \( f(r) + f(-r) \) sadece iki farklı değer alabilir.
+Dolayısıyla, `f(r) + f(-r)` sadece iki farklı değer alabilir.
 
 ## Sonuç:
-Her aquaesulian fonksiyon için, \( f(r) + f(-r) \) ifadesi en fazla iki farklı değer alabilir. Bu nedenle \( c = 2 \) alabiliriz ve bu en küçük değerdir.
-Ayrıca, \( f \)'nin örnekleriyle \( f(r) + f(-r) \) ifadesinin gerçekten iki farklı değer alabildiğini gösterdik.
+Her aquaesulian fonksiyon için, `f(r) + f(-r)` ifadesi en fazla iki farklı değer alabilir. Bu nedenle \( c = 2 \) alabiliriz ve bu en küçük değerdir.
+Ayrıca, \( f \)'nin örnekleriyle `f(r) + f(-r)` ifadesinin gerçekten iki farklı değer alabildiğini gösterdik.
 
 **Cevap:** \( c = 2 \)
-
