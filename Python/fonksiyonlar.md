@@ -151,3 +151,35 @@ Fonksiyon `kare(5)` ifadesiyle çağrıldığında, 5'in karesi hesaplanır ve b
 
 ### `return` İfadesi Olmadan:
 Eğer `return` ifadesi kullanılmazsa, fonksiyon sonuç döndürmez ve varsayılan olarak `None` değeri döner.
+
+
+# 7. Değişkenlerin Kapsamı (Scope)
+
+- **Yerel Değişkenler (Local Variables):** Fonksiyon içinde tanımlanan ve sadece o fonksiyon içinde erişilebilen değişkenlerdir.
+- **Global Değişkenler:** Fonksiyon dışında tanımlanan ve programın her yerinden erişilebilen değişkenlerdir.
+
+```python
+x = 10  # Global değişken
+
+def fonksiyon():
+    x = 5  # Yerel değişken
+    print(x)  # Çıktı: 5
+
+fonksiyon()
+print(x)  # Çıktı: 10
+```
+
+### 7.1. global Anahtar Kelimesi
+
+Fonksiyon içinde global bir değişkeni değiştirmek için kullanılır.
+
+```python
+x = 10
+
+def degistir():
+    global x
+    x = 5
+
+degistir()
+print(x)  # Çıktı: 5
+```
