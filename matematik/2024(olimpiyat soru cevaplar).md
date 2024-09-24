@@ -378,6 +378,7 @@ Bu durumda, en küçük deneme sayısı **n**:
 
 6. Soru çözümü ;
 
+
 # Problem
 Rasyonel sayıların kümesi \( \mathbb{Q} \) üzerinde fonksiyonları inceliyoruz. Bir fonksiyon \( f: \mathbb{Q} 	o \mathbb{Q} \) her \( x, y \in \mathbb{Q} \) için aşağıdaki şartlardan en az birini sağlıyorsa, bu fonksiyona aquaesulian fonksiyonu denir:
 1. \( f(x + f(y)) = f(x) + y \)
