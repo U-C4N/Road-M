@@ -19,3 +19,14 @@ def fonksiyon_adi(parametreler):
     # Fonksiyonun yaptığı işler
     return sonuç
 ```
+- **def** anahtar kelimesi ile fonksiyon tanımlanır.
+- **fonksiyon_adi** fonksiyonun adıdır ve küçük harflerle yazılması tercih edilir.
+- **parametreler** fonksiyona dışarıdan gönderilen verilerdir (isteğe bağlıdır).
+- **return** fonksiyonun çağrıldığı yere geri döndürdüğü değeri belirtir (isteğe bağlıdır).
+
+### 3.2. Örnek: Parametresiz ve Dönüş Değeri Olmayan Fonksiyon
+
+```python
+def merhaba_de():
+    print("Merhaba!")
+```
