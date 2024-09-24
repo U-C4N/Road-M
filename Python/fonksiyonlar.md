@@ -183,3 +183,41 @@ def degistir():
 degistir()
 print(x)  # Çıktı: 5
 ```
+
+# 8. Lambda Fonksiyonları (Anonim Fonksiyonlar)
+
+- Tek satırlık, isimsiz fonksiyonlardır.
+- **lambda** anahtar kelimesi ile tanımlanır.
+
+```python
+kare = lambda x: x ** 2
+print(kare(5))  # Çıktı: 25
+```
+
+# 9. Rekürsif Fonksiyonlar
+
+- Kendini çağıran fonksiyonlardır.
+- Özellikle matematiksel hesaplamalarda kullanılır (faktöriyel, Fibonacci serisi vb.).
+
+```python
+def faktoriyel(n):
+    if n == 1:
+        return 1
+    else:
+        return n * faktoriyel(n - 1)
+
+print(faktoriyel(5))  # Çıktı: 120
+```
+
+# 10. Docstring (Fonksiyonları Belgelendirme)
+
+- Fonksiyonların ne yaptığını açıklamak için kullanılır.
+- Üç tırnak işareti arasında yazılır.
+
+```python
+def toplama(a, b):
+    """Bu fonksiyon iki sayının toplamını döndürür."""
+    return a + b
+
+print(toplama.__doc__)  # Çıktı: Bu fonksiyon iki sayının toplamını döndürür.
+```
