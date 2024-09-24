@@ -94,3 +94,6 @@ def toplam(*sayilar):
 print(toplam(1, 2, 3))         # Çıktı: 6
 print(toplam(4, 5, 6, 7, 8))   # Çıktı: 30
 ```
+
+Bu örnekte, toplam fonksiyonu değişken sayıda argüman alabilir. Her bir sayı, `*sayilar` parametresi sayesinde bir tuple içinde toplanır.
+
