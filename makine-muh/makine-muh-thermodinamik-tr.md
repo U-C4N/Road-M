@@ -1,7 +1,7 @@
 
 # Makine Mühendisliği Öğrencileri İçin Termodinamik Yol Haritası
 
-Bu yol haritası, termodinamiği en temel kavramlardan en ileri düzey konulara kadar kapsamlı bir şekilde öğrenmenizi sağlamak amacıyla hazırlandı. Termodinamik bilgilerinizi derinleştirmenize ve pratik uygulamalarını daha iyi anlamanıza yardımcı olacak. Bölüm 1'den 5'e kadar olan konular aşağıda detaylandırılmıştır.
+Bu yol haritası, termodinamiği en temel kavramlardan en ileri düzey konulara kadar kapsamlı bir şekilde öğrenmenizi sağlamak amacıyla hazırlandı. Termodinamik bilgilerinizi derinleştirmenize ve pratik uygulamalarını daha iyi anlamanıza yardımcı olacak. Bölüm 1'den 17'e kadar olan konular aşağıda detaylandırılmıştır.
 
 ---
 
