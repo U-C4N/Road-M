@@ -338,3 +338,36 @@ Bu yol haritası, termodinamiği en temel kavramlardan en ileri düzey konulara 
 - **Güvenlik Protokolleri**
 - **Araştırma Etiği**
 
+## 16. Termodinamiğin Endüstriyel Uygulamaları
+
+### 16.1. Otomotiv Mühendisliği *(Orta)*
+- **Motor Termodinamiği**
+- **Egzoz Sistemleri ve Emisyon Kontrolü**
+
+### 16.2. Havacılık ve Uzay Mühendisliği *(Zor)*
+- **Jet Motorları ve Roket Termodinamiği**
+- **Yüksek İrtifa ve Uzay Termodinamiği**
+
+### 16.3. Malzeme Bilimi ve Termodinamik *(Zor)*
+- **Termodinamik Diyagramlar (Fe-C Diyagramı)**
+- **Malzeme Faz Geçişleri**
+
+### 16.4. Biyotermodinamik *(Zor)*
+- **Canlı Sistemlerde Enerji Dönüşümü**
+- **Metabolik Süreçlerin Termodinamiği**
+
+---
+
+## 17. Kariyer ve Mesleki Gelişim
+
+### 17.1. Araştırma ve İnovasyon *(Kolay)*
+- **Yeni Teknolojilerin Geliştirilmesi**
+- **Patent Süreçleri**
+
+### 17.2. Profesyonel Organizasyonlar ve Ağ Oluşturma *(Kolay)*
+- **Mühendislik Odaları ve Kuruluşları**
+- **Konferanslar ve Seminerler**
+
+### 17.3. Sürekli Eğitim ve Sertifikasyonlar *(Kolay)*
+- **Profesyonel Gelişim Kursları**
+- **Uluslararası Sertifikalar**
