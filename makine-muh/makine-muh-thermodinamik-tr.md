@@ -154,3 +154,95 @@ Bu yol haritası, termodinamiği en temel kavramlardan en ileri düzey konulara 
 - **Rejenerasyon**
 - **Ara Soğutma ve Yeniden Isıtma**
 - **Kombine Çevrimler**
+
+
+## 6. Soğutma ve Isı Pompası Sistemleri
+
+### 6.1. Buhar Sıkıştırmalı Soğutma Çevrimi *(Zor)*
+- **Çevrim Bileşenleri**
+- **P-h ve T-s Diyagramları**
+- **Soğutucu Akışkanların Seçimi**
+
+### 6.2. Absorpsiyonlu Soğutma Sistemleri *(Zor)*
+- **Çalışma Prensibi**
+- **Absorban ve Soğutucu Çiftleri**
+
+### 6.3. Özel Soğutma Sistemleri *(Zor)*
+- **Gaz Sıkıştırmalı Soğutma**
+- **Termoelektrik Soğutma**
+
+---
+
+## 7. Ekserji ve İkinci Yasa Analizi
+
+### 7.1. Ekserji Kavramı *(Zor)*
+- **Ekserji ve Anenerji**
+- **Çevresel Koşulların Etkisi**
+
+### 7.2. Ekserji Dengesi ve Yıkımı *(Zor)*
+- **Ekserji Yıkımının Hesaplanması**
+- **Sistem Bileşenlerinde Ekserji Analizi**
+
+### 7.3. İkinci Yasa Verimi *(Zor)*
+- **Gerçek Sistemlerin Performansı**
+- **Ekserji Veriminin Artırılması**
+
+---
+
+## 8. Gaz Karışımları ve Psikrometri
+
+### 8.1. Gaz Karışımlarının Termodinamiği *(Orta)*
+- **Dalton'un Kısmi Basınçlar Yasası**
+- **Amagat'ın Kısmi Hacimler Yasası**
+- **İdeal ve Gerçek Gaz Karışımları**
+
+### 8.2. Psikrometrik Prensipler *(Orta)*
+- **Nem Oranı ve Bağıl Nem**
+- **Çiy Noktası ve Islak Termometre Sıcaklığı**
+- **Psikrometrik Diyagram Kullanımı**
+
+### 8.3. Hava Şartlandırma Süreçleri *(Orta)*
+- **Isıtma ve Soğutma**
+- **Nemlendirme ve Nem Alma**
+- **Karışım Süreçleri**
+
+---
+
+## 9. Kimyasal Termodinamik ve Yanma
+
+### 9.1. Kimyasal Tepkimelerin Termodinamiği *(Zor)*
+- **Yanma Reaksiyonları**
+- **Stokiyometrik Hesaplamalar**
+- **Alt ve Üst Isıl Değerler**
+
+### 9.2. Kimyasal Denge *(Zor)*
+- **Gibbs Serbest Enerjisi**
+- **Denge Sabitleri ve Kısmi Basınçlar**
+- **Le Chatelier Prensibi**
+
+### 9.3. Yanma Ürünlerinin Özellikleri
+- **Adyabatik Alev Sıcaklığı**
+- **Egzoz Gazlarının Analizi**
+- **Emisyon Kontrol Teknolojileri**
+
+---
+
+## 10. Termodinamik İlişkiler ve İleri Konular
+
+### 10.1. Termodinamik Özellik İlişkileri *(Zor)*
+- **Maxwell İlişkileri**
+- **Tersinir Süreçler İçin Özellik Denklemleri**
+
+### 10.2. Faz Denge ve Faz Geçişleri *(Zor)*
+- **Clapeyron Denklemi**
+- **Clausius-Clapeyron Denklemi**
+- **Faz Diyagramlarının Analizi**
+
+### 10.3. Sıkıştırılabilir Akış ve Gaz Dinamiği *(Çok Zor)*
+- **Ses Hızı ve Mach Sayısı**
+- **Nozul Akışları**
+- **Şok Dalgaları**
+
+### 10.4. Termodinamiğin Matematiksel Temelleri *(Zor)*
+- **Diferansiyel Denklemler**
+- **Matematiksel Modelleme**
