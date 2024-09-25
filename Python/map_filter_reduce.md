@@ -155,7 +155,3 @@ print(sonuc)  # Çıktı: 15
 - **`map()`**: Dönüştürme işlemleri için kullanılır. Her öğeye aynı işlemi uygular.
 - **`filter()`**: Seçme işlemleri için kullanılır. Belirli bir koşulu sağlayan öğeleri seçer.
 - **`reduce()`**: İndirgeme işlemleri için kullanılır. Bir listeyi tek bir değere dönüştürür.
-
-Bu fonksiyonları anlamak, başlangıçta zor gelebilir, ancak örneklerle çalışarak ve pratik yaparak kavramları pekiştirebilirsiniz. 
-Eğer takıldığınız noktalar varsa, sorularınızı sormaktan çekinmeyin!
-
