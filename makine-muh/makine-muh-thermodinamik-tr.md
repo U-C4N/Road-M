@@ -246,3 +246,95 @@ Bu yol haritası, termodinamiği en temel kavramlardan en ileri düzey konulara 
 ### 10.4. Termodinamiğin Matematiksel Temelleri *(Zor)*
 - **Diferansiyel Denklemler**
 - **Matematiksel Modelleme**
+
+## 11. Isı Transferi ve Termodinamiğin Entegrasyonu
+
+### 11.1. Isı Transfer Modları *(Orta)*
+- **İletim**
+- **Taşınım**
+- **Işınım**
+
+### 11.2. Isı Eşanjörleri *(Orta)*
+- **Tipleri**
+- **Etkinlik ve NTU Metodu**
+
+### 11.3. Isı Transferi ile Termodinamiğin Birleştirilmesi *(Orta)*
+- **Enerji Sistemlerinin Analizi**
+- **Kombine Çevrimler**
+
+---
+
+## 12. Uygulamalı Termodinamik ve Enerji Sistemleri
+
+### 12.1. Güç Santralleri ve Enerji Üretimi *(Orta)*
+- **Termik Santraller**
+- **Nükleer Santraller**
+- **Yenilenebilir Enerji Kaynakları**
+  - **Güneş Enerjisi**
+  - **Rüzgar Enerjisi**
+  - **Hidroelektrik Enerji**
+  - **Jeotermal Enerji**
+  - **Biyokütle Enerjisi**
+
+### 12.2. Soğutma ve İklimlendirme Uygulamaları *(Orta)*
+- **HVAC Sistemleri**
+- **Soğuk Depolama Sistemleri**
+- **Enerji Verimliliği ve Tasarruf Yöntemleri**
+
+### 12.3. Çevresel Etkiler ve Sürdürülebilirlik *(Orta)*
+- **Emisyon Azaltımı**
+- **Karbon Ayak İzi ve İklim Değişikliği**
+- **Enerji Politikaları ve Yönetmelikler**
+
+---
+
+## 13. Hesaplamalı Termodinamik ve Simülasyon
+
+### 13.1. Yazılım Araçları *(Orta)*
+- **EES (Engineering Equation Solver)**
+- **MATLAB ve Simulink**
+- **Ansys Fluent ve CFD Yazılımları**
+
+### 13.2. Sistem Modelleme ve Optimizasyon *(Orta)*
+- **Termodinamik Sistemlerin Simülasyonu**
+- **Optimizasyon Teknikleri**
+
+### 13.3. Veri Analizi ve Makine Öğrenmesi Uygulamaları
+- **Büyük Veri Analizi**
+- **Tahmin Modelleri**
+- **Makine Öğrenmesi ile Enerji Tahmini**
+
+---
+
+## 14. İstatistiksel Termodinamik ve İleri Uygulamalar
+
+### 14.1. Mikroskopik Termodinamik Temelleri *(Çok Zor)*
+- **Mikro ve Makrodurumlar**
+- **Boltzmann Dağılımı**
+- **Entropinin İstatistiksel Yorumu**
+
+### 14.2. İstatistiksel Yaklaşımların Uygulamaları *(Çok Zor)*
+- **Termodinamik Özelliklerin Hesaplanması**
+- **Kuantum Mekaniği ile İlişkiler**
+
+### 14.3. Faz Geçişlerinin Mikroskopik Analizi
+- **Bose-Einstein ve Fermi-Dirac İstatistikleri**
+- **Kritik Olaylar ve Faz Geçişleri**
+
+---
+
+## 15. Deneysel Termodinamik ve Ölçüm Teknikleri
+
+### 15.1. Termodinamik Ölçüm Aletleri ve Sensörler *(Orta)*
+- **Termometreler ve Sıcaklık Ölçümü**
+- **Basınç Sensörleri**
+- **Akış Ölçerler**
+
+### 15.2. Deney Tasarımı ve Veri Analizi *(Orta)*
+- **Deneysel Hata Analizi**
+- **Kalibrasyon Teknikleri**
+
+### 15.3. Laboratuvar Güvenliği ve Etik *(Kolay)*
+- **Güvenlik Protokolleri**
+- **Araştırma Etiği**
+
