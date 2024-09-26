@@ -49,3 +49,103 @@ print(x)
 
 Bu kod `NameError` istisnası fırlatır çünkü `x` tanımlanmamıştır.
 
+
+## Python'daki Yaygın İstisnalar
+
+- **`NameError`**: Tanımsız bir değişken kullanıldığında.
+- **`TypeError`**: Yanlış türde bir değer kullanıldığında.
+- **`IndexError`**: Listede olmayan bir indekse erişildiğinde.
+- **`KeyError`**: Sözlükte olmayan bir anahtara erişildiğinde.
+- **`ValueError`**: Bir fonksiyona geçersiz bir değer verildiğinde.
+- **`ZeroDivisionError`**: Bir sayıyı sıfıra bölmeye çalışıldığında.
+- **`AttributeError`**: Bir nesnenin olmayan bir özelliğine erişildiğinde.
+
+### Örnekler
+
+```python
+# ZeroDivisionError
+print(10 / 0)
+```
+
+```python
+# IndexError
+liste = [1, 2, 3]
+print(liste[5])
+```
+
+## İstisna Yakalama: `try` ve `except`
+
+İstisnaları yakalamak ve yönetmek için `try` ve `except` bloklarını kullanırız.
+
+### Temel Kullanım
+
+```python
+try:
+    # Hata olabilecek kod buraya yazılır
+    sayi = int(input("Bir sayı girin: "))
+    sonuc = 10 / sayi
+    print("Sonuç:", sonuc)
+except ZeroDivisionError:
+    # İstisna durumunda çalışacak kod
+    print("Sıfıra bölme hatası!")
+```
+
+Bu kodda, kullanıcı sıfır girerse `ZeroDivisionError` yakalanır ve program çökmez.
+
+## Özel İstisnaların Yakalanması
+
+Birden fazla istisna türünü yakalamak için farklı `except` blokları kullanabilirsiniz.
+
+```python
+try:
+    sayi = int(input("Bir sayı girin: "))
+    sonuc = 10 / sayi
+    print("Sonuç:", sonuc)
+except ZeroDivisionError:
+    print("Sıfıra bölme hatası!")
+except ValueError:
+    print("Geçersiz bir sayı girdiniz!")
+```
+
+## Birden Fazla `except` Bloğu Kullanımı
+
+Bir `try` bloğunda birden fazla `except` bloğu kullanarak farklı istisnaları ayrı ayrı ele alabilirsiniz.
+
+```python
+try:
+    # Kodunuz
+except TypeError:
+    # TypeError ele alındığında çalışacak kod
+except ValueError:
+    # ValueError ele alındığında çalışacak kod
+```
+
+## `else` ve `finally` Blokları
+
+### `else` Bloğu
+
+`try` bloğunda hata oluşmazsa `else` bloğu çalışır.
+
+```python
+try:
+    sayi = int(input("Bir sayı girin: "))
+except ValueError:
+    print("Geçersiz giriş!")
+else:
+    print("Girdiğiniz sayı:", sayi)
+```
+
+### `finally` Bloğu
+
+Hata oluşsa da oluşmasa da her zaman çalışır.
+
+```python
+try:
+    dosya = open("dosya.txt", "r")
+    # Dosya işlemleri
+except FileNotFoundError:
+    print("Dosya bulunamadı!")
+finally:
+    dosya.close()
+```
+
