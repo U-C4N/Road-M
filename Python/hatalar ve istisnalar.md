@@ -26,3 +26,26 @@ Python programlamaya yeni başlayan biri olarak, hatalar ve istisnaların nasıl
 **Hata (Error)**: Programın çalışmasını engelleyen sorunlardır. Hatalar genellikle sözdizimi (syntax) hataları veya mantıksal hatalar olabilir.
 
 **İstisna (Exception)**: Programın normal akışını bozan olaylardır. İstisnalar, programın beklenmeyen durumlarla karşılaştığında verdiği tepkilerdir.
+
+## Sözdizimi Hataları ve İstisnalar
+
+### Sözdizimi Hataları
+
+Sözdizimi hataları, Python kodunun dilin kurallarına uymadığında ortaya çıkar. Örneğin:
+
+```python
+# Eksik parantez
+print("Merhaba Dünya")
+```
+Bu kod çalıştırıldığında `SyntaxError` alırsınız.
+
+### İstisnalar
+Sözdizimi hataları düzeltildikten sonra, kod çalışırken ortaya çıkan hatalara istisna denir. Örneğin:
+
+```python
+# Tanımsız bir değişken kullanımı
+print(x)
+```
+
+Bu kod `NameError` istisnası fırlatır çünkü `x` tanımlanmamıştır.
+
