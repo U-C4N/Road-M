@@ -48,3 +48,12 @@ print(x)
 
 Bu kod `NameError` istisnası gösterir çünkü `x` tanımlanmamıştır.
 
+
+# Python'da Hatalar ve İstisnalar: Baştan İleri Seviyeye Kadar Detaylı Bir Anlatım
+
+## Hata ve İstisnaların Tanımı
+
+**Hata (Error)**: Programın çalışmasını engelleyen sorunlardır. Hatalar genellikle sözdizimi (syntax) hataları veya mantıksal hatalar olabilir.
+
+**İstisna (Exception)**: Programın normal akışını bozan olaylardır. İstisnalar, programın beklenmeyen durumlarla karşılaştığında verdiği tepkilerdir.
+
