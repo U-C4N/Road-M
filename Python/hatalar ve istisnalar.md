@@ -35,7 +35,7 @@ Sözdizimi hataları, Python kodunun dilin kurallarına uymadığında ortaya ç
 
 ```python
 # Eksik parantez
-print("Merhaba Dünya")
+print("Merhaba Dünya"
 ```
 Bu kod çalıştırıldığında `SyntaxError` alırsınız.
 
