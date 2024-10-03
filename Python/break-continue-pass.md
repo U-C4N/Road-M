@@ -206,5 +206,3 @@ while i <= 5:
 Bu ifadeler, döngülerde akışı kontrol etmek ve kodunuzu daha esnek hale getirmek için kullanışlıdır. Özellikle karmaşık koşullar ve işlemler içeren döngülerde, bu ifadeleri kullanarak kodunuzu daha okunabilir ve yönetilebilir hale getirebilirsiniz.
 
 ---
-
-**Not:** Bu rehber, Python programlama dilinde döngülerde kullanılan `break`, `continue` ve `pass` ifadelerini anlamanıza yardımcı olmak için hazırlanmıştır. Kod örneklerini kendi bilgisayarınızda deneyerek daha iyi anlayabilirsiniz.
